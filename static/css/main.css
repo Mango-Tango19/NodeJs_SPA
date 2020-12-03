@@ -1,0 +1,119 @@
+.dropdown-item:hover {
+    background-color: rgb(168, 219, 236);
+}
+.navbar-menu {
+    padding: 3.5rem 0;
+    margin: auto;
+}
+div.container.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+}
+
+div.container.card-desk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-desk {
+    padding: 0;
+}
+
+.card-body {
+    box-shadow: 5px 5px 15px gray;
+}
+
+.card {
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+
+.text-center {
+    text-align: center!important;
+}
+.navbar {
+    padding: 1rem 0;
+}   
+
+div.row.menu-buttons {
+    justify-content: space-between;
+
+}
+/*
+div.row.row-cols-1.row-cols-md-2 {
+    justify-content: space-between;
+}*/
+
+div.row.menu-buttons {
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 540px) {
+
+    div.container.header {
+        padding: 0 2rem;
+    }
+
+    .container>.navbar-menu {
+        vertical-align: baseline;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container.header {
+        justify-content: space-around;
+    }
+
+    .container.container-menu-buttons {
+    margin: 0;
+    display: inline;
+    }
+    div.row.menu-buttons {
+        display: flex;
+        margin: 0;
+        padding: 0 1rem;
+        justify-content: space-evenly;
+    }
+    div.dropdown {
+        margin-bottom: 1rem;
+    }
+    button.btn.btn-secondary.dropdown-toggle {
+        font-size: 1.2rem;
+    }
+
+    div.container.card-desk {
+        justify-content: space-between;
+    }
+    .card {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 960px) {
+    div.row.menu-buttons {
+        display: flex;
+        margin: 0;
+        padding: 0 1rem;
+        justify-content: space-evenly;
+    }
+    div.row.menu-buttons {
+        padding-top: 1rem;
+    }
+    div.dropdown {
+        margin-bottom: 1rem;
+    }
+}
