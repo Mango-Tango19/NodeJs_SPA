@@ -1,3 +1,4 @@
+/*NAVBAR*/
 .dropdown-item:hover {
     background-color: rgb(168, 219, 236);
 }
@@ -11,6 +12,8 @@ div.container.menu {
     padding: 2rem 0;
 
 }
+
+/*CARD_DESK*/
 
 div.container.card-desk {
     display: flex;
@@ -26,6 +29,7 @@ div.container.card-desk {
     box-shadow: 5px 5px 15px gray;
 }
 
+/*CARD*/
 .card {
     width: 20rem;
     margin-bottom: 2rem;
@@ -43,14 +47,12 @@ div.row.menu-buttons {
     justify-content: space-between;
 
 }
-/*
-div.row.row-cols-1.row-cols-md-2 {
-    justify-content: space-between;
-}*/
 
 div.row.menu-buttons {
     padding: 2rem 0;
 }
+
+/*MEDIA*/
 
 @media screen and (max-width: 540px) {
 

@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_fitness_spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mango-Tango19/NodeJs_SPA.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node"
+  ],
+  "author": "Dasha Bulatova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mango-Tango19/NodeJs_SPA/issues"
+  },
+  "homepage": "https://github.com/Mango-Tango19/NodeJs_SPA#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
