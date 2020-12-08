@@ -66,16 +66,29 @@ const writeTemplate = function (template, product) {
     output = output.replace(/{%TITLE%}/g, product.title);
     output = output.replace(/{%DESCRIPTION%}/g, product.description);
     output = output.replace(/{%PRICE%}/g, product.price);
+    output = output.replace(/{%TAGS%}/g, writeTags(product.properties));
+    return output;
+};
 
-    return output
+const writeTags = function (properties) { //properties is array of obj
+    return properties.map(({
+        title,
+        value
+    }) => {
+        return `<a href="#" title=${title} class="btn btn-outline-primary btn-sm m-1" role="button">${value}</a>`;
+    }).join('');
+
+
 };
 
 const detectCard = function (productAlias) {
-    dataArr.forEach(el => {
+    let product = dataArr.filter(function (el) {
         if (el.alias === productAlias) {
-            return el
+            return el;
         }
     })
+    return product[0];
+
 };
 
 
@@ -104,7 +117,8 @@ const server = http.createServer((req, res) => {
         });
         const productAlias = pathname.slice(1);
         const product = detectCard(productAlias);
-        const output = writeTemplate(productTemp, product);
+        const productHtml = writeTemplate(productTemp, product);
+        const output = mainTemp.replace('{%PRODUCT_CARD%}', productHtml);
         //path = dataArr[query.alias];
         res.end(output);
     } else {
