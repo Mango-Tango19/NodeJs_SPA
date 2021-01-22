@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-const port = 3000;
+const port = process.env.PORT || 80;
 const data = fs.readFileSync(`${(__dirname)}/dev_data/data.json`);
 const dataArr = JSON.parse(data).services;
 let cardsUrlArr = [];
